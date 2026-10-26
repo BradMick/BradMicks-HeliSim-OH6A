@@ -1,0 +1,23 @@
+name = "OH-6A - HeliSim"
+prefix = "bmkhs_oh6a"
+mainprefix = "x"
+
+[properties]
+author = "BradMick"
+
+[version]
+major = 0
+minor = 1
+patch = 0
+build = 0
+git_hash = 0
+
+[files]
+include = [
+    "README.md",
+    "mod.cpp",
+]
+
+[hemtt.release]
+sign = true
+archive = true
