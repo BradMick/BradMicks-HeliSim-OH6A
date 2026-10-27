@@ -73,8 +73,10 @@ pack declares - it was hard-wired to two (Core working tree, uncommitted).
 Main rotor tables (2026-10-27) fitted with `rotortables.py`, record in Core's
 `python/dev/fits/oh6a.txt`: hovers 2200 lb 62%, 2550 lb 76%, peak 2640 lb 80%; the -10's
 2200 lb cruise curve, max range 115 kt. Fit OK, every point within 0.5%. Hover collective 0.686.
-Front drag 0.330 flat, fitted to 6 deg nose low at max range (book: 5-7 deg) - 100 kt 5.4,
-115 kt 6.0, 130 kt 6.5 deg in the rig.
+Front drag 0.278 flat (0.330 before the tail surfaces moved aft, 2026-10-27; the wings then moved
+a further 0.2 m aft, 0.1 m up from the in-game nudge, in fm.p3d), fitted to 6 deg nose
+low at max range (book: 5-7 deg); tables refitted with it - 100 kt 5.2,
+115 kt 6.0, 130 kt 6.6 deg in the rig.
 
 Rocket station measured in `_06` (2026-10-27): PylonRight1 {0.885, 1.175, 0.842}. Most forward
 gunship loading (pilot + copilot, no fuel or ammo, M229 x4) 0.959 - inside 0.967. Still to

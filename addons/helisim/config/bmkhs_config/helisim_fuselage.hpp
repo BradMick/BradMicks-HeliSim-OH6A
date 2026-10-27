@@ -13,7 +13,7 @@
 
     fmPlacement[]   = {0, -1.500, 0.000, 0.000, 0.200, -2.700, 0.000};
     fuselageAirfoil = "NACA 0012";
-    //Front drag 0.330 flat: rotortables.py --cruise-pitch -6, 115 kt (max range) trims 6 deg nose low.
+    //Front drag 0.278 flat (tail moved 2026-10-27): rotortables.py --cruise-pitch -6, 115 kt (max range) trims 6 deg nose low.
 
     class FuselagePanels {
         class FuselagePanel01 {
@@ -68,11 +68,11 @@
             name   = "fuselageFront";
             facing = "forward";
             dragCoefTable[] = {
-                 {   0, 0.330}
-                ,{2000, 0.330}
-                ,{4000, 0.330}
-                ,{6000, 0.330}
-                ,{8000, 0.330}
+                 {   0, 0.278}
+                ,{2000, 0.278}
+                ,{4000, 0.278}
+                ,{6000, 0.278}
+                ,{8000, 0.278}
             };
             panels[] = {
                  {{ 0.260, 0.996, 2.519},{-0.260, 0.996, 2.519},{-0.260, 0.989, 2.279},{ 0.260, 0.989, 2.279}}
