@@ -1,0 +1,4 @@
+#T63-A-5A ratings, sea level. N1 at each rating is estimated - not in the -10.
+#name  FAT_C  N1     T45_C  torque
+MCP    15     0.970  693    0.852
+TOP    15     1.000  749    1.000

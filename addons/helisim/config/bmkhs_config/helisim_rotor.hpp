@@ -11,7 +11,7 @@
     rotorNumBlades[]     = {4,      4};
     rotorNumElements[]   = {4.0,    4.0};
     rotorMastLength[]    = {0.70,   -0.87};   //m
-    rotorGearRatio[]     = {72.291, 14.90};
+    rotorGearRatio[]     = {12.397, 1.923};   //6000 rpm engine / 484 main, 3120 tail
 
     //Hub position and disc orientation in model space. Where the mast sits and which way
     //the disc faces is pure airframe geometry.

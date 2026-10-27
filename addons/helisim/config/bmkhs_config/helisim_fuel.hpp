@@ -13,7 +13,8 @@
 //  removable - 1 if the tank can be taken out; 0 is always fitted
 //  role      - "main" (an engine can draw from it) or "xfer" (feeds the mains only)
 
-    //The one tank under the cabin floor - 61.5 US gal of JP-4. TODO(OH6A): arm and lowFuelKg.
+    //The one tank under the cabin floor - full is 366 lb of JP-8 (6.7 lb/gal). Arm from the
+    //fuel moment chart: moment/100 equals weight in lb, so FS 100.0 in. TODO(OH6A): lowFuelKg.
     numCrossfeedModes = 1;
     class CrossfeedModes {
         class Norm { position = "NORM"; engSources[] = {"mainTank"}; };
@@ -23,8 +24,8 @@
     class FuelTanks {
         class FuelTank01 {
             variableName = "mainTank";
-            arm[]     = {0.000, 2.210, 0.000};
-            capacity  = 181.0;
+            arm[]     = {0.000, 0.886, 0.000};  //FS 100.0 in, fsDatum 3.426
+            capacity  = 166.0;                  //kg, 366 lb
             lowFuelKg = 0.0;
             removable = 0;
             role      = "main";
