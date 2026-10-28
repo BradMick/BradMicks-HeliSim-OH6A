@@ -129,7 +129,7 @@
                 fuelFly  = 3.136;        //WIDE OPEN - the governor cuts back from here
 
                 //Fuel metered at light-off as a fraction of idle fuel. Sets the start PEAK.
-                startFuelBase = 0.25;     //keeps the start peak under the 749 C normal start limit (rig 671 C) - not fitted to OH-6A start data
+                startFuelBase = 0.06;     //keeps the start peak under 749 C in every Core environment, lever to IDLE at once (rig worst 717 C, Central Asia Summer; 634 C standard day) - not fitted to OH-6A start data
 
                 ffwdGain = 1.00;         //collective anticipation - the load demand spindle
 

@@ -3,7 +3,7 @@
 Where the pack is, what is settled, and what is next. Updated after every task.
 
 Started 2026-10-26 on HeliSim Core 1.4.0.0. Built from the Bo 105 pack (`E:\bmkhs_bo105`,
-`f514bc9`), following Core's `docs/AIRCRAFT_GUIDE.md`. On GitHub, `BradMick/BradMicks-HeliSim-OH6A`; needs HeliSim Core 1.4.2.0.
+`f514bc9`), following Core's `docs/AIRCRAFT_GUIDE.md`. On GitHub, `BradMick/BradMicks-HeliSim-OH6A`; needs HeliSim Core 1.4.3.0.
 
 ## Where it is
 
@@ -95,8 +95,14 @@ Core's T700 map corrected below idle. OH-6A `motoringNg` 0.25. Rig start (lever 
 dry crank 0.250, N1 58% at 19.9 s with Nr 0.20, peak TGT 674 C at 13 s, idle at 36 s, idle Nr
 0.63. Not fitted - needs the OH-6A's own start data (time to 58%, peak TOT).
 
+Start at altitude (2026-10-27): the engine overtemped off sea level. Core now meters fuel below FLY
+on inlet pressure (Wf/P3 on corrected Ng), which held the peak under `startTgt`, but in Asia it still
+sat over 749 C past the 6 s tier and took damage. `startFuelBase` 0.25 -> 0.06: rig peak with the
+lever to IDLE at once 634 C standard day, 689 C Asia, 717 C Central Asia Summer (the worst); 52% at
+23-26 s.
+
 First flight tests (2026-10-27): flies well. Changed after them - cyclic `rollLiftCoef` /
-`pitchLiftCoef` x 1.3 then x 1.1 (0.238 / 0.451); tail `liftCoefTable` x 1.5 then x 1.2 (x 1.8); tail drag at full left pedal
+`pitchLiftCoef` x 1.3 then x 1.1 (0.238 / 0.451); tail `liftCoefTable` x 1.5 then x 1.2, then x 0.7 and x 1.1 after later flights (x 1.386); tail drag at full left pedal
 0.2519 -> 0.0760, from ~50% torque to ~15% (estimate, no OH-6A figure).
 
 Blade masses (2026-10-27): main 7.5 kg, tail 0.5 kg (were the Bo 105's 25 / 1.49). Main rotor
